@@ -10,4 +10,6 @@ import java.time.Instant;
 public class Note {
     private int valeur;
     private Instant dateDeNote;
+    private String motif;
+    private Etudiant etudiant;
 }

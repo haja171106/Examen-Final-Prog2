@@ -25,6 +25,14 @@ public class Examen {
                 .max(Comparator.comparing(Note::getDateDeNote))
                 .map(Note::getValeur)
                 .get();
+    }
+
+    public double getExamGrade(Examen examen, Etudiant etudiant, Instant t) {
+        return (examen.getNotes(t)) * coefficient;
+    }
+
+    public double getCourseGrade(Cours cours, Etudiant etudiant, Instant t) {
 
     }
+
 }
