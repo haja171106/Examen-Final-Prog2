@@ -1,10 +1,10 @@
 package note;
 
-import junit.framework.TestCase;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 
-public class ExamenTest extends TestCase {
-
+public class ExamenTest {
+    @BeforeEach
 
     @Test
     public void testGetExamGrade() {

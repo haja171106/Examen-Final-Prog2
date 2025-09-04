@@ -28,11 +28,11 @@ public class Examen {
     }
 
     public double getExamGrade(Examen examen, Etudiant etudiant, Instant t) {
-        return (examen.getNotes(t)) * coefficient;
+        return examen.getNotes(t);
     }
 
     public double getCourseGrade(Cours cours, Etudiant etudiant, Instant t) {
         return cours.getCredit() * getExamGrade(this, etudiant, t);
     }
-    
+
 }
