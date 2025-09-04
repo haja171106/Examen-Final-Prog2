@@ -32,7 +32,7 @@ public class Examen {
     }
 
     public double getCourseGrade(Cours cours, Etudiant etudiant, Instant t) {
-
+        return cours.getCredit() * getExamGrade(this, etudiant, t);
     }
-
+    
 }
